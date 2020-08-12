@@ -8,15 +8,24 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
-
 }
 .app__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.app__left {
+  flex: 0.9;
 }
 .app__stats {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
 }
